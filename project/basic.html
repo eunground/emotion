@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Beads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>감정 구슬 만들기</h1>
+
+    <div class="container">
+        <label for="imageUpload">사진 업로드:</label>
+        <input type="file" id="imageUpload" accept="image/*"><br><br>
+
+        <label for="textInput">한 줄 글쓰기:</label>
+        <input type="text" id="textInput"><br><br>
+
+        <label for="emotionSelect">감정 선택:</label>
+        <select id="emotionSelect">
+            <option value="happy">행복</option>
+            <option value="sad">슬픔</option>
+            <option value="angry">화남</option>
+            <option value="surprised">놀람</option>
+            <option value="fearful">두려움</option>
+        </select><br><br>
+
+        <button onclick="createBead()">구슬 생성</button>
+    </div>
+
+    <div class="emotion-beads" id="emotionBeadsContainer">
+        <!-- 감정 구슬들이 여기에 생성됩니다 -->
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.emotion-beads {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.bead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.bead img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.bead .text-content {
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: 55px;
+}
+
+.bead .emotion-text {
+    display: none; /* 한 줄 글쓰기 텍스트 숨기기 */
+}
+
+.emotion-happy { background-color: yellow; }
+.emotion-sad { background-color: blue; }
+.emotion-angry { background-color: red; }
+.emotion-surprised { background-color: orange; }
+.emotion-fearful { background-color: purple; }
+ 
